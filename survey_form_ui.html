@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육 만족도 설문</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 에러 표시창 -->
+    <div id="error-box" class="alert-box"></div>
+
+    <!-- 설문 작성 화면 -->
+    <div id="survey-screen">
+      <h1 id="survey-title">교육 만족도 설문</h1>
+      <p class="subtitle">더 나은 교육 서비스를 제공하기 위해 여러분의 소중한 의견을 들려주세요.</p>
+
+      <form id="survey-form" novalidate>
+        <div id="questions-container">
+          <!-- SURVEY 상수를 기반으로 동적 생성됨 -->
+        </div>
+        
+        <button type="submit" id="submit-btn" class="btn">설문 제출하기</button>
+      </form>
+    </div>
+
+    <!-- 제출 완료 화면 -->
+    <div id="success-screen" class="success-screen hidden">
+      <div class="success-icon">✓</div>
+      <h2 class="success-title">설문 작성이 완료되었습니다!</h2>
+      <p class="success-desc">소중한 의견을 보내주셔서 대단히 감사합니다.</p>
+      <a href="results.html" class="btn">실시간 결과 확인하기</a>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설문 결과 조회</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 에러 표시창 -->
+    <div id="error-box" class="alert-box"></div>
+
+    <div class="stats-header">
+      <h1 id="results-title">설문 실시간 집계</h1>
+      <div class="response-badge">총 참여 인원: <span id="total-count">0</span>명</div>
+    </div>
+
+    <!-- 객관식 그래프 렌더링 영역 -->
+    <div id="charts-container">
+      <!-- 실시간 결과 차트가 생성되는 영역 -->
+    </div>
+
+    <!-- 주관식 피드백 리스트 영역 -->
+    <div class="feedbacks-title">최근 개선 의견 (최대 20개)</div>
+    <div id="feedback-list" class="feedback-list">
+      <div style="color: #64748b; text-align: center; padding: 20px 0;">의견 로딩 중 또는 등록된 의견이 없습니다.</div>
+    </div>
+
+    <div style="margin-top: 32px;">
+      <a href="index.html" class="btn" style="background-color: #64748b;">설문 참여화면 가기</a>
+    </div>
+  </div>
+
+  <script type="module" src="results.js"></script>
+</body>
+</html>
